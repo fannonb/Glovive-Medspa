@@ -189,14 +189,14 @@ export default function TreatmentsPage() {
                     <div className="my-4 h-px w-full bg-border/50 transition-colors duration-300 group-hover:bg-cognac/30" />
                     <p className="text-sm md:text-base leading-relaxed text-ink/65">{c.description}</p>
                     
-                    <div className="mt-5 flex items-center justify-between">
-                      <div className="flex items-center gap-4">
-                        <span className="text-[10px] text-ink/50">{c.treatmentCount} treatments</span>
-                        <span className="text-[10px] text-cognac">{c.priceRange}</span>
+                    <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border/40 pt-5">
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Treatments</p>
+                        <p className="mt-1 font-serif text-lg text-ink">{c.treatmentCount}</p>
                       </div>
-                      <div className="flex items-center gap-1 text-[11px] uppercase tracking-[0.22em] text-cognac">
-                        View
-                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Starting</p>
+                        <p className="mt-1 font-serif text-lg text-cognac">{c.priceRange}</p>
                       </div>
                     </div>
                   </div>
