@@ -105,27 +105,36 @@ export default function AboutPage() {
       </section>
 
       {/* PHILOSOPHY */}
-      <section className="bg-linen">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
-            <div>
+      <section className="bg-linen py-20 lg:py-32 border-t border-border/50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+            {/* Left: Sticky Intro */}
+            <div className="lg:w-1/3 lg:sticky lg:top-32 self-start">
               <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Philosophy</span>
-              <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-ink md:text-5xl">
-                What we <em className="italic text-cognac">believe.</em>
+              <h2 className="mt-4 font-serif text-[40px] leading-[1.1] tracking-tight text-ink md:text-5xl">
+                What we <br className="hidden lg:block"/> <em className="italic text-cognac">believe.</em>
               </h2>
-              <p className="mt-6 text-sm md:text-base leading-relaxed text-ink/70">
+              <p className="mt-6 text-[15px] leading-relaxed text-ink/70">
                 Three principles guide every treatment we offer and every client we serve.
               </p>
             </div>
-            <ul className="divide-y divide-border/50 border-y border-border/50">
-              {philosophy.map((p) => (
-                <li key={p.number} className="grid gap-6 py-10 md:grid-cols-[80px_1fr_2fr] md:items-start">
-                  <span className="font-serif text-sm italic text-cognac">{p.number}</span>
-                  <h3 className="font-serif text-2xl text-ink md:text-3xl">{p.title}</h3>
-                  <p className="text-sm md:text-base leading-relaxed text-ink/70">{p.copy}</p>
-                </li>
-              ))}
-            </ul>
+            
+            {/* Right: The Principles */}
+            <div className="lg:w-2/3">
+              <ul className="divide-y divide-border/60 border-t border-border/60">
+                {philosophy.map((p) => (
+                  <li key={p.number} className="flex flex-col md:flex-row gap-6 md:gap-12 py-10 md:py-14">
+                    <div className="flex gap-6 md:w-[45%]">
+                      <span className="font-serif text-[20px] italic text-cognac mt-1 shrink-0">{p.number}</span>
+                      <h3 className="font-serif text-[28px] md:text-[34px] leading-[1.15] text-ink pr-4">{p.title}</h3>
+                    </div>
+                    <div className="md:w-[55%]">
+                      <p className="text-[15px] leading-[1.8] text-ink/75 pt-1 md:pt-2">{p.copy}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
