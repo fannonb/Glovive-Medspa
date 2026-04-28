@@ -1,27 +1,13 @@
 import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import "./globals.css"
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-})
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-})
-
 export const metadata: Metadata = {
   title: "GloVive Wellness & MedSpa | IV Nutrient, Ketamine & Vitamin Therapy",
   description:
-    "Elevated IV nutrient therapy, ketamine wellness, vitamin injections, and medical weight management in Columbia, Maryland. Where wellness meets elevated care.",
+    "Elevated IV nutrient therapy, Ketamine IV Infusion Therapy, vitamin injections, and medical weight management in Columbia, Maryland. Where wellness meets elevated care.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -41,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} bg-background`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="bg-background"
+    >
       <body className="font-sans antialiased text-foreground">
         <SiteHeader />
         <main>{children}</main>

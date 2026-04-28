@@ -41,7 +41,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-10">
             <div>
               <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Visit</span>
-              <h2 className="mt-3 font-serif text-3xl text-ink md:text-4xl">The GloVive Studio</h2>
+              <h2 className="mt-3 font-serif text-3xl text-ink md:text-4xl">The GloVive MedSpa</h2>
               <div className="mt-6 space-y-5 text-sm md:text-base text-ink/80">
                 <p className="flex items-start gap-4">
                   <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-cognac" />

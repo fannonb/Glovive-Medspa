@@ -14,8 +14,8 @@ const treatments = [
     tagline: "A signature radiance infusion designed to deeply hydrate and enhance your natural glow.",
     benefits: ["Hydration", "Skin radiance", "Anti-aging", "Glow enhancement"],
     pricing: [
-      { size: "500 mL", price: "$165" },
-      { size: "1000 mL", price: "$195" },
+      { size: "500 mL", price: "$185" },
+      { size: "1000 mL", price: "$220" },
     ],
   },
   {
@@ -23,8 +23,8 @@ const treatments = [
     tagline: "A revitalizing infusion crafted to restore energy and sharpen focus.",
     benefits: ["Energy", "Mental clarity", "Reduced fatigue", "Metabolism support"],
     pricing: [
-      { size: "500 mL", price: "$140" },
-      { size: "1000 mL", price: "$165" },
+      { size: "500 mL", price: "$170" },
+      { size: "1000 mL", price: "$200" },
     ],
   },
   {
@@ -32,8 +32,8 @@ const treatments = [
     tagline: "A protective infusion designed to strengthen your immune system.",
     benefits: ["Immune support", "Recovery", "Anti-inflammatory", "Wellness"],
     pricing: [
-      { size: "500 mL", price: "$150" },
-      { size: "1000 mL", price: "$175" },
+      { size: "500 mL", price: "$175" },
+      { size: "1000 mL", price: "$205" },
     ],
   },
   {
@@ -41,8 +41,8 @@ const treatments = [
     tagline: "A calming infusion designed to ease tension and promote relaxation.",
     benefits: ["Relaxation", "Headache relief", "Reduced inflammation", "Hydration"],
     pricing: [
-      { size: "500 mL", price: "$135" },
-      { size: "1000 mL", price: "$160" },
+      { size: "500 mL", price: "$155" },
+      { size: "1000 mL", price: "$190" },
     ],
   },
   {
@@ -57,8 +57,8 @@ const treatments = [
     tagline: "An essential infusion to restore hydration and rebalance the body.",
     benefits: ["Rapid hydration", "Electrolytes", "Recovery"],
     pricing: [
-      { size: "500 mL", price: "$110" },
-      { size: "1000 mL", price: "$130" },
+      { size: "500 mL", price: "$150" },
+      { size: "1000 mL", price: "$185" },
     ],
   },
   {
@@ -66,8 +66,8 @@ const treatments = [
     tagline: "A gentle infusion supporting detoxification and internal reset.",
     benefits: ["Detox", "Liver support", "Rejuvenation", "Hydration"],
     pricing: [
-      { size: "500 mL", price: "$145" },
-      { size: "1000 mL", price: "$170" },
+      { size: "500 mL", price: "$170" },
+      { size: "1000 mL", price: "$200" },
     ],
   },
   {
@@ -75,17 +75,17 @@ const treatments = [
     tagline: "A performance-focused infusion to restore strength and accelerate recovery.",
     benefits: ["Muscle recovery", "Reduced soreness", "Hydration", "Performance"],
     pricing: [
-      { size: "500 mL", price: "$155" },
-      { size: "1000 mL", price: "$180" },
+      { size: "500 mL", price: "$180" },
+      { size: "1000 mL", price: "$200" },
     ],
   },
 ]
 
 const addOns = [
-  { name: "Vitamin C", price: "$25" },
-  { name: "Glutathione", price: "$30 – $40" },
-  { name: "B12 Boost", price: "$20" },
-  { name: "Zinc", price: "$20" },
+  { name: "Vitamin C", price: "$50" },
+  { name: "Glutathione", price: "$45 – $55" },
+  { name: "B12 Boost", price: "$40" },
+  { name: "Zinc", price: "$45" },
 ]
 
 export default function IVHydrationPage() {
@@ -125,7 +125,7 @@ export default function IVHydrationPage() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Starting</p>
-                  <p className="mt-1 font-serif text-2xl text-cognac">$110</p>
+                  <p className="mt-1 font-serif text-2xl text-cognac">$150</p>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import { ArrowUpRight, Droplets, HeartPulse, Syringe, MapPin, Leaf } from "lucid
 export const metadata = {
   title: "Treatment Collections | GloVive Wellness & MedSpa",
   description:
-    "Explore our curated treatment collections — IV hydration, ketamine wellness, vitamin injections, concierge service, and body balance programs.",
+    "Explore our curated treatment collections — IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, Concierge IV Hydration, and GloVive Body Balance programs.",
 }
 
 const collections = [
@@ -18,7 +18,7 @@ const collections = [
     image: "/images/collection-iv.jpg",
     icon: Droplets,
     treatmentCount: 8,
-    priceRange: "from $110",
+    priceRange: "from $150",
     href: "/treatments/iv-hydration",
     featured: true,
   },
@@ -26,12 +26,12 @@ const collections = [
     id: "ketamine",
     number: "02",
     title: "The Reset Experience",
-    subtitle: "Ketamine Wellness",
-    description: "Medically guided, immersive wellness designed to restore clarity, emotional balance, and inner calm in a safe environment.",
+    subtitle: "Ketamine IV Infusion Therapy",
+    description: "Medically guided, immersive wellness designed to restore clarity, emotional balance, and inner calm in a controlled environment.",
     image: "/images/collection-ketamine.jpg",
     icon: HeartPulse,
     treatmentCount: 4,
-    priceRange: "from $125",
+    priceRange: "from $150",
     href: "/treatments/ketamine",
   },
   {
@@ -43,7 +43,7 @@ const collections = [
     image: "/images/collection-vitamins.jpg",
     icon: Syringe,
     treatmentCount: 5,
-    priceRange: "from $25",
+    priceRange: "from $40",
     href: "/treatments/vitamins",
   },
   {
@@ -61,7 +61,7 @@ const collections = [
   {
     id: "body-balance",
     number: "05",
-    title: "Body Balance",
+    title: "GloVive Body Balance",
     subtitle: "Weight Management",
     description: "A personalized, medically guided approach designed to support sustainable weight loss and improved metabolism.",
     image: "/images/collection-balance.jpg",
@@ -88,7 +88,7 @@ export default function TreatmentsPage() {
               Treatment <em className="italic text-cognac">Collections</em>
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-sm md:text-base lg:text-lg leading-relaxed text-ink/70">
-              Five curated collections. Each designed with intention, backed by medicine, and delivered with care.
+              Our curated collections. Each designed with intention, backed by medicine, and delivered with care.
             </p>
           </div>
         </div>

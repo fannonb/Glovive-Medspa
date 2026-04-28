@@ -171,13 +171,13 @@ export default function ConciergePage() {
               Available <em className="italic text-cognac">Treatments</em>
             </h2>
             <p className="mt-4 text-base text-ink/70">
-              All of our IV hydration treatments are available for concierge service. Choose from our full menu of signature infusions.
+              All of our IV Nutrient Hydration treatments are available for concierge service. Choose from our full menu of signature infusions.
             </p>
             <Link
               href="/treatments/iv-hydration"
               className="mt-6 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-cognac transition-colors hover:text-cognac-dark"
             >
-              View IV Hydration Menu
+              View IV Nutrient Hydration Menu
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>

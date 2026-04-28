@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="relative aspect-[16/9] overflow-hidden rounded-lg">
             <Image
               src="/images/interior-spa.jpg"
-              alt="GloVive Wellness & MedSpa studio interior"
+              alt="GloVive Wellness & MedSpa medspa interior"
               fill
               priority
               sizes="100vw"
@@ -73,21 +73,26 @@ export default function AboutPage() {
             <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-ink md:text-5xl">
               A vision for wellness that feels <em className="italic text-cognac">personal.</em>
             </h2>
+            <div className="mt-6 space-y-4 text-sm md:text-base leading-relaxed text-ink/75">
+              <p>
+                GloVive Wellness & MedSpa is a physician- and nurse-led practice where advanced medical expertise meets elevated, intentional self-care. We specialize in personalized wellness and aesthetic services designed to restore balance, enhance confidence, and optimize overall well-being.
+              </p>
+              <p>
+                Our offerings include IV nutrient hydration therapy, body balance weight management, ketamine-assisted infusion therapy, hormone optimization, and aesthetic refinements—each thoughtfully curated and delivered with precision, discretion, and a commitment to exceptional results.
+              </p>
+              <p>
+                At GloVive, care is not routine—it is refined, personalized, and designed to help you look, feel, and function at your highest level.
+              </p>
+            </div>
             <p className="mt-6 text-sm md:text-base leading-relaxed text-ink/75">
-              GloVive Wellness & MedSpa was founded with a vision to create a space where health, beauty, and
-              confidence come together. With a background in healthcare and a passion for helping others feel their
-              best, our mission is to provide safe, effective, and personalized treatments that enhance both inner
-              wellness and outward glow.
-            </p>
-            <p className="mt-6 text-sm md:text-base leading-relaxed text-ink/75">
-              Every detail — from the design of our Columbia studio to the thoughtful cadence of our protocols — is
+              Every detail — from the design of our Columbia medspa to the thoughtful cadence of our protocols — is
               intentional. We are a medical practice first, and a sanctuary second. And we believe the two belong
               together.
             </p>
             <div className="mt-10 flex items-center gap-6 border-t border-border/50 pt-8">
               <div>
                 <p className="font-serif text-3xl text-ink">Columbia, MD</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Our home studio</p>
+                <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Our home medspa</p>
               </div>
               <span className="h-10 w-px bg-border" />
               <div>

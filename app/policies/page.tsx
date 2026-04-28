@@ -13,7 +13,7 @@ const policies = [
     title: "Appointments & Consultations",
     body: [
       "All new clients are required to complete a brief health intake prior to their first visit. This ensures we can provide safe, personalized care from the moment you arrive.",
-      "Certain services — including ketamine wellness and medical weight management — require an initial consultation before treatment can be scheduled.",
+      "Certain services — including Ketamine IV Infusion Therapy and medical weight management — require an initial consultation before treatment can be scheduled.",
     ],
   },
   {

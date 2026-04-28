@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowUpRight, Leaf, Check } from "lucide-react"
 
 export const metadata = {
-  title: "Body Balance Program | GloVive Wellness & MedSpa",
+  title: "GloVive Body Balance Program | GloVive Wellness & MedSpa",
   description: "A personalized, medically guided approach designed to support sustainable weight loss and improved metabolism.",
 }
 
@@ -52,7 +52,7 @@ export default function BodyBalancePage() {
                 <span className="text-[11px] uppercase tracking-[0.22em] text-cognac">Collection 05</span>
               </div>
               <h1 className="mt-5 font-serif text-[44px] leading-[1.05] tracking-tight text-ink md:text-[56px]">
-                GloVive <em className="italic text-cognac">Body Balance</em>
+                <em className="italic text-cognac">GloVive Body Balance</em>
               </h1>
               <p className="mt-5 max-w-lg text-sm md:text-base leading-relaxed text-ink/70">
                 A personalized, medically guided approach designed to support sustainable weight loss, improved metabolism, and overall wellness.
@@ -156,7 +156,7 @@ export default function BodyBalancePage() {
             Start your <em className="italic text-cognac">transformation.</em>
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm md:text-base text-ink/70">
-            Schedule a consultation to discuss your goals and learn if our Body Balance program is right for you.
+            Schedule a consultation to discuss your goals and learn if our GloVive Body Balance program is right for you.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link

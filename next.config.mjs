@@ -5,14 +5,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: __dirname,
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
-  },
-  turbopack: {
-    root: __dirname,
   },
 }
 

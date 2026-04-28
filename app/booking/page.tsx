@@ -5,7 +5,7 @@ import { Phone, MessageSquare, Mail, MapPin, ArrowUpRight } from "lucide-react"
 export const metadata = {
   title: "Book an Appointment | GloVive Wellness & MedSpa",
   description:
-    "Book your GloVive appointment. Call or text us to schedule IV hydration, ketamine wellness, vitamin injections, body balance, or concierge service.",
+    "Book your GloVive appointment. Call or text us to schedule IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, GloVive Body Balance, or Concierge IV Hydration.",
 }
 
 const steps = [
@@ -17,12 +17,12 @@ const steps = [
   {
     number: "02",
     title: "Book your visit",
-    copy: "Choose in-studio or concierge. We'll confirm your date, time, and any pre-treatment guidance.",
+    copy: "Choose in-medspa or concierge. We'll confirm your date, time, and any pre-treatment guidance.",
   },
   {
     number: "03",
     title: "Arrive & glow",
-    copy: "Settle in at the studio or welcome us to your space. Everything after is designed around you.",
+    copy: "Settle in at the medspa or welcome us to your space. Everything after is designed around you.",
   },
 ]
 
@@ -45,7 +45,7 @@ export default function BookingPage() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg lg:aspect-[4/5]">
             <Image
               src="/images/interior-spa.jpg"
-              alt="GloVive studio interior"
+              alt="GloVive medspa interior"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 40vw"
@@ -116,7 +116,7 @@ export default function BookingPage() {
             >
               <MapPin className="h-5 w-5 text-cognac" strokeWidth={1.5} />
               <div>
-                <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Visit the studio</p>
+                <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Visit the medspa</p>
                 <p className="mt-1 text-sm md:text-base text-ink">7310 Grace Drive, Suite B · Columbia, MD</p>
               </div>
             </Link>

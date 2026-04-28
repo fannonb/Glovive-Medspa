@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Mail, Instagram } from "lucide-react"
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 
 const hours = [
   ["Sunday", "Closed"],
@@ -28,7 +28,7 @@ export function SiteFooter() {
               />
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-bone/75">
-              Where wellness meets elevated care. Personalized IV hydration, ketamine wellness, vitamin injections, and
+              Where wellness meets elevated care. Personalized IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, and
               medical weight management in Columbia, Maryland.
             </p>
             <div className="mt-7 flex items-center gap-3">
@@ -38,6 +38,13 @@ export function SiteFooter() {
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bone/25 transition-colors hover:border-bone hover:bg-bone/10"
               >
                 <Instagram className="h-4 w-4" />
+              </Link>
+              <Link
+                href="https://facebook.com"
+                aria-label="Facebook"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bone/25 transition-colors hover:border-bone hover:bg-bone/10"
+              >
+                <Facebook className="h-4 w-4" />
               </Link>
             </div>
           </div>

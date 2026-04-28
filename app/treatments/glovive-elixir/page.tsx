@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Info, RefreshCw, Clock, CalendarCheck, Droplets, Sparkles, Sun, ChevronRight } from "lucide-react"
 
 export const metadata = {
-  title: "The GloVive Elixir | IV Hydration Treatment | GloVive Wellness & MedSpa",
+  title: "The GloVive Elixir | IV Nutrient Hydration Treatment | GloVive Wellness & MedSpa",
   description:
     "A signature radiance infusion designed to deeply hydrate and enhance your natural glow. Experience skin radiance, anti-aging benefits, and deep hydration at GloVive.",
 }
@@ -125,7 +125,7 @@ export default function GloViveElixirPage() {
         <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
           <Image
             src="/images/treatment-elixir-hero.jpg"
-            alt="GloVive Elixir IV hydration treatment"
+            alt="GloVive Elixir IV Nutrient Hydration treatment"
             fill
             priority
             sizes="100vw"
@@ -200,7 +200,7 @@ export default function GloViveElixirPage() {
                 <ul className="mt-6 divide-y divide-border/50">
                   <li className="flex items-center justify-between py-4">
                     <span className="text-ink/75">500 mL</span>
-                    <span className="font-serif text-2xl text-ink">$165</span>
+                    <span className="font-serif text-2xl text-ink">$185</span>
                   </li>
                   <li className="flex items-center justify-between py-4">
                     <span className="flex items-center gap-2 text-ink/75">
@@ -209,7 +209,7 @@ export default function GloViveElixirPage() {
                         Most Popular
                       </span>
                     </span>
-                    <span className="font-serif text-2xl text-ink">$195</span>
+                    <span className="font-serif text-2xl text-ink">$220</span>
                   </li>
                 </ul>
                 <Link
@@ -224,7 +224,7 @@ export default function GloViveElixirPage() {
               <div className="rounded-xl border border-border/60 bg-bone/40 p-6">
                 <Sparkles className="h-5 w-5 text-cognac" strokeWidth={1.5} />
                 <p className="mt-3 text-sm md:text-base leading-relaxed text-ink/70">
-                  <strong className="text-ink">Enhance your glow</strong> — Add Glutathione ($30-$40) for extra skin brightening and detox support.
+                  <strong className="text-ink">Enhance your glow</strong> — Add Glutathione ($45-$55) for extra skin brightening and detox support.
                 </p>
               </div>
             </div>

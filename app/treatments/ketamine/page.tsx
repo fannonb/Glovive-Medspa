@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowUpRight, HeartPulse } from "lucide-react"
 
 export const metadata = {
-  title: "Ketamine Wellness Collection | GloVive Wellness & MedSpa",
+  title: "Ketamine IV Infusion Therapy Collection | GloVive Wellness & MedSpa",
   description: "Medically guided ketamine therapy designed to restore clarity, emotional balance, and inner calm.",
 }
 
@@ -11,12 +11,12 @@ const offerings = [
   {
     name: "Initial Consultation",
     description: "Personalized assessment and treatment planning with our medical team.",
-    price: "$125",
+    price: "$150",
   },
   {
     name: "Ketamine Infusion Session",
-    description: "A guided IV experience focused on healing, clarity, and restoration in a safe, supportive environment.",
-    price: "$400 – $450",
+    description: "A guided IV experience focused on healing, clarity, and restoration in a controlled, supportive environment.",
+    price: "$450 – $500",
     per: "per session",
     featured: true,
   },
@@ -29,7 +29,7 @@ const offerings = [
   {
     name: "Maintenance Sessions",
     description: "Continued support following your initial treatment protocol to sustain your progress.",
-    price: "$350",
+    price: "$400",
   },
 ]
 
@@ -61,7 +61,7 @@ export default function KetaminePage() {
                 The GloVive <em className="italic">Reset</em> Experience
               </h1>
               <p className="mt-5 max-w-lg text-sm md:text-base leading-relaxed text-bone/80">
-                Medically guided, immersive wellness designed to restore clarity, emotional balance, and inner calm — in a safe, supportive environment.
+                Medically guided, immersive wellness designed to restore clarity, emotional balance, and inner calm — in a controlled, supportive environment.
               </p>
               <div className="mt-6 flex items-center gap-6 border-t border-bone/20 pt-6">
                 <div>
@@ -70,7 +70,7 @@ export default function KetaminePage() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.2em] text-bone/50">Starting</p>
-                  <p className="mt-1 font-serif text-2xl text-linen">$125</p>
+                  <p className="mt-1 font-serif text-2xl text-linen">$150</p>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function KetaminePage() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-square">
               <Image
                 src="/images/collection-ketamine.jpg"
-                alt="Ketamine wellness treatment room"
+                alt="Ketamine IV Infusion Therapy treatment room"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

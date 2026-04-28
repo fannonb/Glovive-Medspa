@@ -1,11 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Droplets, Sparkles, HeartPulse, Syringe, MapPin, Leaf } from "lucide-react"
+import { ArrowUpRight, Droplets, Sparkles, HeartPulse, Syringe, MapPin, Leaf, Zap } from "lucide-react"
 
 export const metadata = {
   title: "Services | GloVive Wellness & MedSpa",
   description:
-    "Explore GloVive's full menu of services — IV hydration, ketamine wellness, vitamin injections, body balance, and concierge care.",
+    "Explore GloVive's full menu of services — IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, GloVive Body Balance, and Concierge IV Hydration.",
 }
 
 const services = [
@@ -14,7 +14,7 @@ const services = [
     title: "IV Nutrient Therapy",
     description: "Restore balance from within with customized infusions designed to hydrate, replenish, and elevate your overall wellness.",
     href: "/treatments#iv-hydration",
-    image: "/images/service-card-iv.jpg",
+    image: "/images/service-card-iv.png",
     cta: "View Treatments",
   },
   {
@@ -22,7 +22,7 @@ const services = [
     title: "GloVive Concierge Hydration",
     description: "Personalized IV therapy delivered directly to your home, office, or preferred location for a seamless, elevated wellness experience.",
     href: "/treatments#concierge",
-    image: "/images/service-card-concierge.jpg",
+    image: "/images/service-card-concierge.png",
     cta: "Learn More",
   },
   {
@@ -30,7 +30,7 @@ const services = [
     title: "Ketamine Wellness Therapy",
     description: "A guided, medical approach to support mental clarity, emotional balance, and deeper healing in a safe, supportive environment.",
     href: "/treatments#ketamine",
-    image: "/images/service-card-ketamine.jpg",
+    image: "/images/service-card-ketamine.png",
     cta: "Learn More",
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: "Aesthetic Treatments",
     description: "A refined selection of aesthetic services is currently in development. We look forward to introducing treatments designed to elevate and enhance your natural glow.",
     href: "/contact",
-    image: "/images/service-card-aesthetics.jpg",
+    image: "/images/service_card_botox_aesthetics.png",
     cta: "Join the Waitlist",
     comingSoon: true,
   },
@@ -47,7 +47,7 @@ const services = [
     title: "Vitamin Injections",
     description: "Quick, targeted boosts to support energy, immunity, and overall vitality — delivered efficiently and effectively.",
     href: "/treatments#vitamins",
-    image: "/images/service-card-vitamins.jpg",
+    image: "/images/service-card-vitamins.png",
     cta: "View Shots",
   },
   {
@@ -55,8 +55,17 @@ const services = [
     title: "GloVive Body Balance",
     description: "Personalized solutions designed to support sustainable weight loss, improved metabolism, and long-term wellness.",
     href: "/treatments#body-balance",
-    image: "/images/service-card-balance.jpg",
+    image: "/images/service-card-balance.png",
     cta: "Learn More",
+  },
+  {
+    icon: Zap,
+    title: "GloVive Vitality Therapy",
+    description: "Restore your natural balance with medically guided hormone optimization. Personalized TRT and HRT programs designed to enhance vitality, focus, and overall well-being.",
+    href: "/contact",
+    image: "/images/service-vitality-therapy.png",
+    cta: "Learn More",
+    comingSoon: false,
   },
 ]
 
@@ -142,7 +151,7 @@ export default function ServicesPage() {
               </div>
               <h3 className="mt-5 font-serif text-xl text-ink">Medically Guided</h3>
               <p className="mt-3 text-sm md:text-base leading-relaxed text-ink/65">
-                Every treatment is overseen by experienced healthcare professionals with your safety at the center.
+                Every therapy is overseen by experienced licensed healthcare professionals with your safety at the center.
               </p>
             </div>
             <div className="rounded-xl border border-border/40 bg-background p-8 text-center">

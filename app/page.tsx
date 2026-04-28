@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Droplets, Sparkles, Syringe, Leaf, MapPin, HeartPulse } from "lucide-react"
+import { ArrowUpRight, Droplets, Sparkles, Syringe, Leaf, MapPin, HeartPulse, Zap } from "lucide-react"
 import { TreatmentsCarousel } from "@/components/treatments-carousel"
 
 const serviceCards = [
@@ -9,7 +9,7 @@ const serviceCards = [
     title: "IV Nutrient Therapy",
     description: "Customized infusions designed to hydrate, replenish, and elevate your overall wellness.",
     href: "/treatments#iv-hydration",
-    image: "/images/service-card-iv.jpg",
+    image: "/images/service-card-iv.png",
   },
   {
     icon: MapPin,
@@ -17,35 +17,42 @@ const serviceCards = [
     description: "Personalized IV therapy delivered directly to your home, office, or preferred location.",
     href: "/treatments#concierge",
     featured: true,
-    image: "/images/service-card-concierge.jpg",
+    image: "/images/service-card-concierge.png",
   },
   {
     icon: HeartPulse,
-    title: "Ketamine Wellness",
+    title: "Ketamine IV Infusion Therapy",
     description: "A guided, medical approach supporting mental clarity and emotional balance.",
     href: "/treatments#ketamine",
-    image: "/images/service-card-ketamine.jpg",
+    image: "/images/service-card-ketamine.png",
   },
   {
     icon: Sparkles,
-    title: "Aesthetic Treatments",
+    title: "Aesthetic Refinement",
     description: "A refined selection of aesthetic services designed to enhance your natural glow.",
     href: "/services",
-    image: "/images/service-card-aesthetics.jpg",
+    image: "/images/service_card_botox_aesthetics.png",
   },
   {
     icon: Syringe,
     title: "Vitamin Injections",
     description: "Quick, targeted boosts to support energy, immunity, and overall vitality.",
     href: "/treatments#vitamins",
-    image: "/images/service-card-vitamins.jpg",
+    image: "/images/service-card-vitamins.png",
   },
   {
     icon: Leaf,
     title: "GloVive Body Balance",
     description: "Personalized solutions for sustainable weight loss and long-term wellness.",
     href: "/treatments#body-balance",
-    image: "/images/service-card-balance.jpg",
+    image: "/images/service-card-balance.png",
+  },
+  {
+    icon: Zap,
+    title: "GloVive Vitality Therapy",
+    description: "Restore your natural balance with medically guided hormone optimization. Personalized TRT and HRT programs designed to enhance vitality, focus, and overall well-being.",
+    href: "/services",
+    image: "/images/service-vitality-therapy.png",
   },
 ]
 
@@ -54,22 +61,22 @@ const pillars = [
   {
     number: "01",
     title: "Medically Guided",
-    copy: "Every treatment is overseen by experienced healthcare professionals with your safety at the center.",
+    copy: "Every therapy is overseen by experienced licensed healthcare professionals with your safety at the center.",
   },
   {
     number: "02",
     title: "Personalized Care",
-    copy: "No two clients are the same. Protocols are tailored to your goals, biochemistry, and lifestyle.",
+    copy: "No two clients are the same. Sessions are tailored to your goals, biochemistry, and lifestyle.",
   },
   {
     number: "03",
     title: "Elevated Experience",
-    copy: "A calm, editorial studio — or concierge delivery — designed around your comfort and ease.",
+    copy: "A calm, wellness spa — or concierge delivery — designed around your comfort and ease.",
   },
   {
     number: "04",
     title: "Results That Last",
-    copy: "From first visit to maintenance, we build protocols that support long-term vitality and glow.",
+    copy: "From first visit to maintenance, we design personalized protocols that support long-term vitality and glow.",
   },
 ]
 
@@ -84,13 +91,13 @@ export default function HomePage() {
 
           {/* LEFT — copy */}
           <div className="flex w-[44%] shrink-0 flex-col justify-center px-14 pb-10 pt-24">
-            <h1 className="font-serif text-[68px] leading-[1.0] tracking-tight text-ink xl:text-[84px]">
-              Feel better.
+            <h1 className="font-serif text-[54px] leading-[1.05] tracking-tight text-ink xl:text-[68px]">
+              Restore Your Balance.
               <br />
-              <em className="italic text-cognac">Glow</em> brighter.
+              <em className="italic text-cognac">Revive</em> Your Glow.
             </h1>
-            <p className="mt-6 max-w-[340px] text-sm md:text-base leading-relaxed text-ink/70">
-              IV hydration, ketamine wellness, vitamin therapy, and concierge care — medically guided, personally designed.
+            <p className="mt-6 max-w-[420px] text-sm md:text-base leading-relaxed text-ink/70">
+              True radiance begins with balance. At GloVive, we combine modern wellness therapies and aesthetic refinement to help restore vitality, enhance confidence, and support your overall well-being.
             </p>
             <div className="mt-8 flex items-center gap-5">
               <Link
@@ -114,8 +121,8 @@ export default function HomePage() {
           <div className="flex flex-1 gap-2.5 p-3 pl-0">
             <div className="relative flex-1 overflow-hidden rounded-l-sm">
               <Image
-                src="/images/hero-main.jpg"
-                alt="IV hydration drip line during a GloVive treatment"
+                src="/images/hero-main.png"
+                alt="IV Nutrient Hydration treatment featuring a serene Black woman in a luxury medspa"
                 fill
                 priority
                 sizes="35vw"
@@ -127,8 +134,8 @@ export default function HomePage() {
             <div className="flex w-[38%] flex-col gap-2.5">
               <div className="relative flex-1 overflow-hidden rounded-sm">
                 <Image
-                  src="/images/hero-secondary.jpg"
-                  alt="GloVive IV hydration drip bag setup"
+                  src="/images/hero-secondary.png"
+                  alt="Asian woman in a calm, immersive wellness therapy setting"
                   fill
                   sizes="18vw"
                   className="object-cover"
@@ -136,8 +143,8 @@ export default function HomePage() {
               </div>
               <div className="relative flex-1 overflow-hidden rounded-sm">
                 <Image
-                  src="/images/hero-tertiary.jpg"
-                  alt="Vitamin injection preparation at GloVive"
+                  src="/images/hero-tertiary.png"
+                  alt="White man receiving a health consultation and vitamin boost"
                   fill
                   sizes="18vw"
                   className="object-cover"
@@ -153,8 +160,8 @@ export default function HomePage() {
           {/* Full-bleed hero image with overlaid copy */}
           <div className="relative h-[85vw] min-h-[340px] max-h-[500px] w-full overflow-hidden">
             <Image
-              src="/images/hero-main.jpg"
-              alt="GloVive IV hydration treatment setup"
+              src="/images/hero-main.png"
+              alt="IV Nutrient Hydration treatment featuring a serene Black woman"
               fill
               priority
               sizes="100vw"
@@ -165,13 +172,13 @@ export default function HomePage() {
 
             {/* Copy layered over image */}
             <div className="absolute inset-x-0 bottom-0 px-6 pb-8">
-              <h1 className="font-serif text-[48px] leading-[1.02] tracking-tight text-linen">
-                Feel better.
+              <h1 className="font-serif text-[38px] leading-[1.05] tracking-tight text-linen sm:text-[44px]">
+                Restore Your Balance.
                 <br />
-                <em className="italic text-cognac">Glow</em> brighter.
+                <em className="italic text-cognac">Revive</em> Your Glow.
               </h1>
               <p className="mt-3 text-[15px] leading-relaxed text-bone/90">
-                IV hydration, ketamine wellness & vitamin therapy — medically guided, personally designed.
+                True radiance begins with balance. At GloVive, we combine modern wellness therapies and aesthetic refinement to help restore vitality, enhance confidence, and support your overall well-being.
               </p>
               <div className="mt-8 flex items-center gap-5">
                 <Link
@@ -195,20 +202,20 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-2 px-5 pt-2 pb-8">
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
               <Image
-                src="/images/hero-secondary.jpg"
-                alt="IV drip line during a GloVive session"
+                src="/images/hero-secondary.png"
+                alt="Immersive wellness therapy session"
                 fill
                 sizes="50vw"
                 className="object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/50 to-transparent px-4 py-3">
-                <p className="text-[9px] uppercase tracking-[0.22em] text-bone/90">IV Hydration</p>
+                <p className="text-[9px] uppercase tracking-[0.22em] text-bone/90">IV Nutrient Hydration</p>
               </div>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
               <Image
-                src="/images/hero-tertiary.jpg"
-                alt="Vitamin injection preparation at GloVive"
+                src="/images/hero-tertiary.png"
+                alt="Vitamin boost preparation"
                 fill
                 sizes="50vw"
                 className="object-cover"
@@ -222,17 +229,31 @@ export default function HomePage() {
       </section>
 
       {/* INTRO / MARQUEE */}
-      <section aria-label="Highlights" className="border-y border-border/50 bg-bone/60">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-6 py-6 text-[11px] uppercase tracking-[0.32em] text-ink/70 lg:px-10">
-          <span>IV Hydration</span>
-          <span className="h-1 w-1 rounded-full bg-cognac" />
-          <span>Ketamine Wellness</span>
-          <span className="h-1 w-1 rounded-full bg-cognac" />
-          <span>Vitamin Injections</span>
-          <span className="h-1 w-1 rounded-full bg-cognac" />
-          <span>Body Balance</span>
-          <span className="h-1 w-1 rounded-full bg-cognac" />
-          <span>Concierge Service</span>
+      <section aria-label="Highlights" className="border-y border-border/50 bg-bone/60 overflow-hidden">
+        <div className="flex w-max items-center animate-marquee-slow">
+          <div className="flex items-center gap-12 px-12 py-6 text-[11px] uppercase tracking-[0.32em] text-ink/70">
+            <span>IV Nutrient Hydration</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Ketamine IV Infusion Therapy</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Vitamin Injections</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>GloVive Body Balance</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Concierge IV Hydration</span>
+          </div>
+          {/* Duplicate set for seamless loop */}
+          <div className="flex items-center gap-12 px-12 py-6 text-[11px] uppercase tracking-[0.32em] text-ink/70">
+            <span>IV Nutrient Hydration</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Ketamine IV Infusion Therapy</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Vitamin Injections</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>GloVive Body Balance</span>
+            <span className="h-1 w-1 rounded-full bg-cognac" />
+            <span>Concierge IV Hydration</span>
+          </div>
         </div>
       </section>
 
@@ -261,7 +282,7 @@ export default function HomePage() {
             <div className="max-w-xl">
               <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Our Services</span>
               <h2 className="mt-4 font-serif text-[40px] leading-[1.1] tracking-tight text-ink md:text-[48px] lg:text-[56px]">
-                Six ways to feel like <em className="italic text-cognac">yourself</em> again.
+                Ways to feel like <em className="italic text-cognac">yourself</em> again.
               </h2>
             </div>
             <Link
@@ -320,7 +341,7 @@ export default function HomePage() {
             <div className="max-w-xl">
               <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Our Treatments</span>
               <h2 className="mt-4 font-serif text-[40px] leading-[1.1] tracking-tight text-ink md:text-[48px] lg:text-[56px]">
-                Every treatment, <em className="italic text-cognac">thoughtfully designed.</em>
+                Every Treatment <em className="italic text-cognac">thoughtfully curated.</em>
               </h2>
             </div>
             <Link
@@ -348,8 +369,8 @@ export default function HomePage() {
                 The difference is in the <em className="italic">details.</em>
               </h2>
               <p className="mt-6 max-w-md text-sm md:text-base leading-relaxed text-bone/75">
-                A refined wellness studio where medical expertise, personalized protocols, and a calm, editorial
-                environment come together in service of how you feel — inside and out.
+                A refined wellness medspa where medical expertise, personalized therapy, and a calm
+                environment come together in service of how you feel inside and out.
               </p>
             </div>
 
@@ -373,7 +394,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-[0_24px_60px_-20px_rgba(67,40,20,0.25)]">
               <Image
                 src="/images/about-studio.jpg"
-                alt="The GloVive Wellness & MedSpa treatment studio"
+                alt="The GloVive Wellness & MedSpa treatment medspa"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
@@ -393,12 +414,17 @@ export default function HomePage() {
             <h2 className="mt-4 font-serif text-[40px] leading-[1.1] tracking-tight text-ink md:text-[48px] lg:text-[56px]">
               Rooted in healthcare. Built for <em className="italic text-cognac">how you feel.</em>
             </h2>
-            <p className="mt-6 text-sm md:text-base leading-relaxed text-ink/75">
-              GloVive Wellness & MedSpa was founded with a vision to create a space where health, beauty, and
-              confidence come together. With a background in healthcare and a passion for helping others feel their
-              best, our mission is to provide safe, effective, and personalized treatments that enhance both inner
-              wellness and outward glow.
-            </p>
+            <div className="mt-6 space-y-4 text-sm md:text-base leading-relaxed text-ink/75">
+              <p>
+                GloVive Wellness & MedSpa is a physician- and nurse-led practice where advanced medical expertise meets elevated, intentional self-care. We specialize in personalized wellness and aesthetic services designed to restore balance, enhance confidence, and optimize overall well-being.
+              </p>
+              <p>
+                Our offerings include IV nutrient hydration therapy, body balance weight management, ketamine-assisted infusion therapy, hormone optimization, and aesthetic refinements—each thoughtfully curated and delivered with precision, discretion, and a commitment to exceptional results.
+              </p>
+              <p>
+                At GloVive, care is not routine—it is refined, personalized, and designed to help you look, feel, and function at your highest level.
+              </p>
+            </div>
 
             <ul className="mt-8 space-y-4 text-sm md:text-base text-ink/80">
               {[
