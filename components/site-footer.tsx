@@ -33,15 +33,19 @@ export function SiteFooter() {
             </p>
             <div className="mt-7 flex items-center gap-3">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/glovivemedspa?utm_source=qr"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bone/25 transition-colors hover:border-bone hover:bg-bone/10"
               >
                 <Instagram className="h-4 w-4" />
               </Link>
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1Zi12qXkhz/?mibextid=wwXIfr"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bone/25 transition-colors hover:border-bone hover:bg-bone/10"
               >
                 <Facebook className="h-4 w-4" />

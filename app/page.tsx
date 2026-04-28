@@ -9,7 +9,7 @@ const serviceCards = [
     title: "IV Nutrient Therapy",
     description: "Customized infusions designed to hydrate, replenish, and elevate your overall wellness.",
     href: "/treatments#iv-hydration",
-    image: "/images/service-card-iv.png",
+    image: "/images/service-card-iv-diverse.png",
   },
   {
     icon: MapPin,
@@ -24,14 +24,14 @@ const serviceCards = [
     title: "Ketamine IV Infusion Therapy",
     description: "A guided, medical approach supporting mental clarity and emotional balance.",
     href: "/treatments#ketamine",
-    image: "/images/service-card-ketamine.png",
+    image: "/images/service-card-ketamine-diverse.png",
   },
   {
     icon: Sparkles,
     title: "Aesthetic Refinement",
     description: "A refined selection of aesthetic services designed to enhance your natural glow.",
     href: "/services",
-    image: "/images/service_card_botox_aesthetics.png",
+    image: "/images/service-card-aesthetics-diverse.png",
   },
   {
     icon: Syringe,
@@ -52,7 +52,7 @@ const serviceCards = [
     title: "GloVive Vitality Therapy",
     description: "Restore your natural balance with medically guided hormone optimization. Personalized TRT and HRT programs designed to enhance vitality, focus, and overall well-being.",
     href: "/services",
-    image: "/images/service-vitality-therapy.png",
+    image: "/images/service-card-vitality-diverse.png",
   },
 ]
 

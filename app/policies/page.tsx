@@ -10,6 +10,13 @@ export const metadata = {
 const policies = [
   {
     number: "01",
+    title: "Privacy",
+    body: [
+      "Your health information is confidential and protected in accordance with applicable HIPAA privacy regulations. We will never share your information without your consent, except as required by law.",
+    ],
+  },
+  {
+    number: "02",
     title: "Appointments & Consultations",
     body: [
       "All new clients are required to complete a brief health intake prior to their first visit. This ensures we can provide safe, personalized care from the moment you arrive.",
@@ -17,7 +24,7 @@ const policies = [
     ],
   },
   {
-    number: "02",
+    number: "03",
     title: "Cancellations & Rescheduling",
     body: [
       "We kindly ask for at least 24 hours notice to cancel or reschedule your appointment. This allows us to accommodate other clients who may be waiting for care.",
@@ -25,21 +32,21 @@ const policies = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     title: "Late Arrivals",
     body: [
       "Please arrive 5–10 minutes before your appointment time. If you arrive more than 15 minutes late, your appointment may need to be shortened or rescheduled to respect the schedule of other guests.",
     ],
   },
   {
-    number: "04",
+    number: "05",
     title: "No-Show Policy",
     body: [
       "Missed appointments without notice may result in a charge equal to 100% of the scheduled service, and may require a deposit to book future visits.",
     ],
   },
   {
-    number: "05",
+    number: "06",
     title: "Concierge Service",
     body: [
       "Concierge appointments require booking in advance and may be subject to a travel fee depending on your location. A minimum booking may be required for extended travel distances.",
@@ -47,26 +54,19 @@ const policies = [
     ],
   },
   {
-    number: "06",
+    number: "07",
     title: "Payment",
     body: [
-      "We accept major credit cards, debit cards, and HSA/FSA cards when applicable. Payment is due at the time of service.",
+      "We accept cash, major credit cards, debit cards, and HSA/FSA cards when applicable. Payment is due at the time of service.",
       "Pricing is published transparently across our treatment menu. Package pricing, when offered, is non-refundable and valid for 12 months from purchase.",
     ],
   },
   {
-    number: "07",
+    number: "08",
     title: "Medical Eligibility",
     body: [
       "All treatments are medically guided. Not every service is appropriate for every client. We reserve the right to decline treatment if it is not in the best interest of your health or safety.",
       "If you are pregnant, nursing, or managing a complex medical condition, please let us know during booking so we can guide you to appropriate options.",
-    ],
-  },
-  {
-    number: "08",
-    title: "Privacy",
-    body: [
-      "Your health information is confidential and protected in accordance with applicable privacy regulations. We will never share your information without your consent, except as required by law.",
     ],
   },
 ]
