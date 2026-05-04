@@ -3,7 +3,7 @@ import Image from "next/image"
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 
 const hours = [
-  ["Sunday", "Closed"],
+  ["Sunday", "By Appointment Only"],
   ["Monday", "10:00 am – 6:00 pm"],
   ["Tuesday", "9:00 am – 5:00 pm"],
   ["Wednesday", "9:00 am – 5:00 pm"],
@@ -96,7 +96,6 @@ export function SiteFooter() {
             <ul className="mt-5 space-y-3 text-sm">
               {[
                 ["/about", "About"],
-                ["/services", "Services"],
                 ["/treatments", "Treatments"],
                 ["/booking", "Booking"],
                 ["/policies", "Policies"],

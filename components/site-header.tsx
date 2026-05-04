@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/treatments", label: "Treatments" },
   { href: "/policies", label: "Policies" },
   { href: "/contact", label: "Contact" },
@@ -20,7 +19,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center px-6 py-1 lg:px-10">
+      <div className="mx-auto flex max-w-7xl items-center px-6 py-0.5 lg:px-10 lg:py-1">
         {/* Logo */}
         <Link href="/" className="shrink-0" aria-label="GloVive Wellness & MedSpa home">
           <Image
@@ -28,8 +27,7 @@ export function SiteHeader() {
             alt="GloVive Wellness & MedSpa"
             width={140}
             height={140}
-            className="w-auto"
-            style={{ height: "calc(var(--spacing) * 26)" }}
+            className="w-auto h-[60px] lg:h-[104px]"
             priority
           />
         </Link>

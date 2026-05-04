@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const hours = [
-  ["Sunday", "Closed"],
+  ["Sunday", "By Appointment Only"],
   ["Monday", "10:00 am – 6:00 pm"],
   ["Tuesday", "9:00 am – 5:00 pm"],
   ["Wednesday", "9:00 am – 5:00 pm"],
@@ -84,12 +84,6 @@ export default function ContactPage() {
             <div className="rounded-lg border border-border/60 bg-linen p-6">
               <p className="text-[11px] uppercase tracking-[0.22em] text-cognac">Prefer to book?</p>
               <p className="mt-3 font-serif text-xl text-ink">Call or text to schedule instantly.</p>
-              <Link
-                href="/booking"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-cognac px-6 py-3 text-xs uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-cognac-dark"
-              >
-                Booking Page
-              </Link>
             </div>
           </div>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { DiscountPopup } from "@/components/discount-popup"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: "#F5EFE6",
+  themeColor: "#FFFBF5",
 }
 
 export default function RootLayout({
@@ -36,6 +37,7 @@ export default function RootLayout({
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
+        <DiscountPopup />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>

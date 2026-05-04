@@ -8,14 +8,14 @@ const serviceCards = [
     icon: Droplets,
     title: "IV Nutrient Therapy",
     description: "Customized infusions designed to hydrate, replenish, and elevate your overall wellness.",
-    href: "/treatments/iv-hydration",
+    href: "/treatments#iv-hydration",
     image: "/images/hero-main.png",
   },
   {
     icon: MapPin,
     title: "Concierge IV Hydration",
     description: "Personalized IV therapy delivered directly to your home, office, or preferred location.",
-    href: "/treatments/concierge",
+    href: "/treatments#concierge",
     featured: true,
     image: "/images/service-card-iv-diverse.png",
   },
@@ -23,36 +23,35 @@ const serviceCards = [
     icon: HeartPulse,
     title: "Ketamine IV Infusion Therapy",
     description: "A guided, medical approach supporting mental clarity and emotional balance.",
-    href: "/treatments/ketamine-iv-infusion",
+    href: "/treatments#ketamine",
     image: "/images/service-card-ketamine-diverse.png",
   },
   {
     icon: Sparkles,
     title: "Aesthetic Treatment",
     description: "A refined selection of aesthetic services designed to enhance your natural glow.",
-    href: "/treatments/aesthetic-treatments",
+    href: "/services",
     image: "/images/service-card-aesthetics-diverse.png",
-    comingSoon: true,
   },
   {
     icon: Syringe,
     title: "Vitamin Boost Injections",
     description: "Quick, targeted boosts to support energy, immunity, and overall vitality.",
-    href: "/treatments/vitamins",
+    href: "/treatments#vitamins",
     image: "/images/service-card-vitamins.png",
   },
   {
     icon: Leaf,
     title: "GloVive Body Balance",
     description: "Personalized solutions for sustainable weight loss and long-term wellness.",
-    href: "/treatments/body-balance",
+    href: "/treatments#body-balance",
     image: "/images/service-card-balance.png",
   },
   {
     icon: Zap,
     title: "GloVive Vitality Therapy",
     description: "Restore your natural balance with medically guided hormone optimization. Personalized TRT and HRT programs designed to enhance vitality, focus, and overall well-being.",
-    href: "/treatments/vitality-therapy",
+    href: "/services",
     image: "/images/service-card-vitality-diverse.png",
   },
 ]
@@ -85,13 +84,13 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-linen pt-0 pb-6 lg:py-10">
+      <section className="relative overflow-hidden bg-linen">
 
         {/* Desktop */}
         <div className="hidden lg:flex lg:h-[78vh] lg:min-h-[560px] lg:items-stretch">
 
           {/* LEFT — copy */}
-          <div className="flex w-[44%] shrink-0 flex-col justify-center px-14 py-12 lg:py-20">
+          <div className="flex w-[44%] shrink-0 flex-col justify-center px-14 pb-10 pt-24">
             <h1 className="font-serif text-[54px] leading-[1.05] tracking-tight text-ink xl:text-[68px]">
               Restore Your Balance.
               <br />
@@ -156,9 +155,10 @@ export default function HomePage() {
         </div>
 
         {/* Mobile */}
-        <div className="lg:hidden flex flex-col">
-          {/* Hero Image */}
-          <div className="relative h-[75vw] min-h-[300px] w-full overflow-hidden">
+        <div className="lg:hidden">
+
+          {/* Full-bleed hero image with overlaid copy */}
+          <div className="relative h-[85vw] min-h-[340px] max-h-[500px] w-full overflow-hidden">
             <Image
               src="/images/hero-main.png"
               alt="IV Nutrient Hydration treatment featuring a serene Black woman"
@@ -167,39 +167,39 @@ export default function HomePage() {
               sizes="100vw"
               className="object-cover object-center"
             />
-            {/* Subtle gradient overlay to make the image feel premium at the bottom */}
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/20 to-transparent" />
-          </div>
+            {/* Gradient overlay — dark at bottom, clear at top */}
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent" />
 
-          {/* Copy below image */}
-          <div className="px-6 pt-10 pb-6">
-            <h1 className="font-serif text-[42px] leading-[1.05] tracking-tight text-ink sm:text-[48px]">
-              Restore Your Balance.
-              <br />
-              <em className="italic text-cognac">Revive</em> Your Glow.
-            </h1>
-            <p className="mt-5 text-[15px] md:text-base leading-relaxed text-ink/75">
-              True radiance begins with balance. At GloVive, we combine modern wellness therapies and aesthetic treatment to help restore vitality, enhance confidence, and support your overall well-being.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/booking"
-                className="inline-flex items-center gap-2 rounded-full bg-cognac px-7 py-3.5 text-[11px] uppercase tracking-[0.2em] text-primary-foreground hover:bg-cognac-dark shadow-sm"
-              >
-                Book Your Visit
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </Link>
-              <Link
-                href="/treatments"
-                className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3.5 text-[11px] uppercase tracking-[0.2em] text-ink transition-colors hover:border-cognac hover:text-cognac"
-              >
-                Treatments
-              </Link>
+            {/* Copy layered over image */}
+            <div className="absolute inset-x-0 bottom-0 px-6 pb-8">
+              <h1 className="font-serif text-[38px] leading-[1.05] tracking-tight text-linen sm:text-[44px]">
+                Restore Your Balance.
+                <br />
+                <em className="italic text-cognac">Revive</em> Your Glow.
+              </h1>
+              <p className="mt-3 text-[15px] leading-relaxed text-bone/90">
+                True radiance begins with balance. At GloVive, we combine modern wellness therapies and aesthetic treatment to help restore vitality, enhance confidence, and support your overall well-being.
+              </p>
+              <div className="mt-8 flex items-center gap-5">
+                <Link
+                  href="/booking"
+                  className="inline-flex items-center gap-2 rounded-full bg-cognac px-6 py-3 text-[11px] uppercase tracking-[0.2em] text-primary-foreground hover:bg-cognac-dark"
+                >
+                  Book Your Visit
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
+                <Link
+                  href="/treatments"
+                  className="inline-flex items-center rounded-full border border-bone/40 px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-bone/90 backdrop-blur-sm hover:border-cognac hover:text-cognac"
+                >
+                  Treatments
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Two supporting treatment images */}
-          <div className="grid grid-cols-2 gap-2 px-5 py-6">
+          <div className="grid grid-cols-2 gap-2 px-5 pt-2 pb-8">
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
               <Image
                 src="/images/hero-secondary.png"
@@ -208,8 +208,8 @@ export default function HomePage() {
                 sizes="50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/60 to-transparent px-4 pb-4 pt-12">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-linen drop-shadow-md">IV Nutrient Hydration</p>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/50 to-transparent px-4 py-3">
+                <p className="text-[9px] uppercase tracking-[0.22em] text-bone/90">IV Nutrient Hydration</p>
               </div>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
@@ -220,8 +220,8 @@ export default function HomePage() {
                 sizes="50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/60 to-transparent px-4 pb-4 pt-12">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-linen drop-shadow-md">Vitamin Therapy</p>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/50 to-transparent px-4 py-3">
+                <p className="text-[9px] uppercase tracking-[0.22em] text-bone/90">Vitamin Therapy</p>
               </div>
             </div>
           </div>
@@ -229,9 +229,9 @@ export default function HomePage() {
       </section>
 
       {/* INTRO / MARQUEE */}
-      <section aria-label="Highlights" className="border-y border-pine/80 bg-pine overflow-hidden">
+      <section aria-label="Highlights" className="border-y border-border/50 bg-bone/60 overflow-hidden">
         <div className="flex w-max items-center animate-marquee-slow">
-          <div className="flex items-center gap-12 px-12 py-5 text-[11px] uppercase tracking-[0.32em] text-bone/80">
+          <div className="flex items-center gap-12 px-12 py-6 text-[11px] uppercase tracking-[0.32em] text-ink/70">
             <span>IV Nutrient Hydration</span>
             <span className="h-1 w-1 rounded-full bg-cognac" />
             <span>Ketamine IV Infusion Therapy</span>
@@ -243,7 +243,7 @@ export default function HomePage() {
             <span>Concierge IV Hydration</span>
           </div>
           {/* Duplicate set for seamless loop */}
-          <div className="flex items-center gap-12 px-12 py-5 text-[11px] uppercase tracking-[0.32em] text-bone/80">
+          <div className="flex items-center gap-12 px-12 py-6 text-[11px] uppercase tracking-[0.32em] text-ink/70">
             <span>IV Nutrient Hydration</span>
             <span className="h-1 w-1 rounded-full bg-cognac" />
             <span>Ketamine IV Infusion Therapy</span>
@@ -258,7 +258,7 @@ export default function HomePage() {
       </section>
 
       {/* INTRO */}
-      <section className="bg-bone">
+      <section className="bg-linen">
         <div className="mx-auto max-w-5xl px-6 py-14 text-center lg:px-10 lg:py-20">
           <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Welcome</span>
           <h2 className="mt-5 font-serif text-[44px] leading-[1.1] tracking-tight text-ink md:text-[56px] lg:text-[72px]">
@@ -276,20 +276,20 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES PREVIEW */}
-      <section id="services" className="bg-linen">
+      <section id="services" className="bg-bone/50">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-xl">
-              <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Our Treatments</span>
+              <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Our Services</span>
               <h2 className="mt-4 font-serif text-[40px] leading-[1.1] tracking-tight text-ink md:text-[48px] lg:text-[56px]">
                 Ways to feel like <em className="italic text-cognac">yourself</em> again.
               </h2>
             </div>
             <Link
-              href="/treatments"
+              href="/services"
               className="group inline-flex items-center gap-2 self-start text-xs uppercase tracking-[0.22em] text-ink/80 transition-colors hover:text-cognac md:self-end"
             >
-              View all treatments
+              View all services
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -310,13 +310,7 @@ export default function HomePage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {s.comingSoon && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-ink/40">
-                      <span className="rounded-full bg-linen/95 px-4 py-2 text-[10px] uppercase tracking-[0.22em] text-ink">
-                        Coming Soon
-                      </span>
-                    </div>
-                  )}
+
                 </div>
 
                 {/* Content */}
@@ -341,7 +335,7 @@ export default function HomePage() {
       </section>
 
       {/* FEATURED TREATMENTS — carousel */}
-      <section className="bg-bone/70 overflow-hidden">
+      <section className="bg-linen overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-xl">
@@ -457,27 +451,25 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-cognac py-20 lg:py-28">
+      <section className="bg-linen py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-10">
-          <span className="text-[11px] uppercase tracking-[0.32em] text-bone/60">Begin your journey</span>
-          <h2 className="mt-4 font-serif text-[42px] leading-[1.05] tracking-tight text-linen md:text-[56px]">
-            Not sure where to <em className="italic text-bone">begin?</em>
+          <h2 className="font-serif text-[42px] leading-[1.05] tracking-tight text-ink md:text-[56px]">
+            Not sure where to <em className="italic text-cognac">begin?</em>
           </h2>
-          <p className="mt-5 text-sm md:text-base leading-relaxed text-linen/75">
+          <p className="mt-5 text-sm md:text-base leading-relaxed text-ink/60">
             Book a consultation and we&apos;ll craft a personalized plan around your goals, lifestyle, and wellness vision.
           </p>
-          <div className="mx-auto mt-8 h-px w-12 bg-linen/30" />
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/booking"
-              className="group inline-flex items-center gap-2 rounded-full bg-linen px-8 py-4 text-[11px] uppercase tracking-[0.22em] text-cognac transition-all hover:bg-bone"
+              className="group inline-flex items-center gap-2 rounded-full bg-cognac px-8 py-4 text-[11px] uppercase tracking-[0.22em] text-linen transition-all hover:bg-cognac-dark"
             >
               Book a Consultation
               <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             <Link
               href="/treatments"
-              className="inline-flex items-center gap-2 rounded-full border border-linen/35 px-8 py-4 text-[11px] uppercase tracking-[0.22em] text-linen/85 transition-all hover:border-linen hover:text-linen"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-4 text-[11px] uppercase tracking-[0.22em] text-ink/70 transition-all hover:border-cognac hover:text-cognac"
             >
               See All Treatments
             </Link>

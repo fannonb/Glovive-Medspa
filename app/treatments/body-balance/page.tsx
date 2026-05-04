@@ -59,33 +59,33 @@ export default function BodyBalancePage() {
   return (
     <div className="bg-linen min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative w-full h-[55vh] min-h-[500px] flex flex-col justify-center bg-ink">
+      <section className="relative w-full h-[60vh] min-h-[500px] flex flex-col justify-center bg-ink">
         <Image
-          src="/images/hero-secondary.png"
-          alt="Body Balance GLP-1 Therapy"
+          src="/images/collection-balance.jpg"
+          alt="GloVive Body Balance"
           fill
           priority
-          className="object-cover opacity-50 object-center"
+          className="object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" aria-hidden />
+        <div className="absolute inset-0 bg-ink/30" aria-hidden /> {/* Extra overall dimming */}
         
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 pb-20 lg:pb-24 text-center md:text-left">
-          <Link href="/treatments" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-bone/70 hover:text-bone mb-6 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> All Collections
+          <Link href="/treatments" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-linen hover:text-white mb-6 transition-colors drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-semibold">
+            <ArrowLeft className="w-4 h-4" /> All Treatments
           </Link>
-          <span className="block text-[11px] uppercase tracking-[0.3em] text-cognac mb-4">Collection 03</span>
-          <h1 className="font-serif text-[48px] md:text-[72px] lg:text-[84px] leading-[1] text-linen">
+          <h1 className="font-serif text-[48px] md:text-[72px] lg:text-[84px] leading-[1] text-linen drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
             The Body <br className="hidden md:block" />
-            <em className="italic font-light text-cognac">Balance</em>
+            <em className="italic font-light text-gold drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">Balance</em>
           </h1>
         </div>
 
         {/* STATS BAR */}
-        <div className="absolute bottom-0 w-full border-t border-white/10 bg-ink/40 backdrop-blur-md">
+        <div className="absolute bottom-0 w-full border-t border-white/10 bg-pine backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 md:py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
             {quickFacts.map((fact) => (
               <div key={fact.label} className="flex flex-col gap-1.5">
-                <div className="flex items-center gap-2 text-[10px] md:text-[11px] uppercase tracking-[0.15em] text-bone/60">
+                <div className="flex items-center gap-2 text-[11px] md:text-xs uppercase tracking-[0.15em] text-linen/90 font-medium leading-normal pt-0.5">
                   <fact.icon className="w-3.5 h-3.5" />
                   {fact.label}
                 </div>
@@ -290,7 +290,7 @@ export default function BodyBalancePage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-bone/5 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center relative z-10">
           <h2 className="font-serif text-[36px] md:text-[48px] leading-[1.1] text-linen mb-6">
-            Ready to <em className="italic text-cognac">restore & replenish?</em>
+            Ready to <em className="italic text-gold">restore & replenish?</em>
           </h2>
           <p className="text-[16px] leading-[1.8] text-bone/80 max-w-2xl mx-auto mb-10">
             We welcome the opportunity to answer any additional questions and thoughtfully design a treatment plan aligned with your goals.

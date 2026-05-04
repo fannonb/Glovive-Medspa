@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowUpRight, HeartPulse } from "lucide-react"
 
 export const metadata = {
-  title: "Ketamine IV Infusion Therapy Collection | GloVive Wellness & MedSpa",
+  title: "Ketamine IV Infusion Therapy Treatment | GloVive Wellness & MedSpa",
   description: "Medically guided ketamine therapy designed to restore clarity, emotional balance, and inner calm.",
 }
 
@@ -42,10 +42,10 @@ export default function KetaminePage() {
           {/* Back link */}
           <Link
             href="/treatments"
-            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-bone/60 transition-colors hover:text-linen"
+            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-linen/85 transition-colors hover:text-linen"
           >
             <ArrowLeft className="h-4 w-4" />
-            All Collections
+            All Treatments
           </Link>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -55,7 +55,6 @@ export default function KetaminePage() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-bone/10">
                   <HeartPulse className="h-5 w-5 text-bone" strokeWidth={1.75} />
                 </div>
-                <span className="text-[11px] uppercase tracking-[0.22em] text-bone/60">Collection 02</span>
               </div>
               <h1 className="mt-5 font-serif text-[44px] leading-[1.05] tracking-tight text-linen md:text-[56px]">
                 The GloVive <em className="italic">Reset</em> Experience
@@ -65,11 +64,11 @@ export default function KetaminePage() {
               </p>
               <div className="mt-6 flex items-center gap-6 border-t border-bone/20 pt-6">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-bone/50">Offerings</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-bone/70">Offerings</p>
                   <p className="mt-1 font-serif text-2xl text-linen">{offerings.length}</p>
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-bone/50">Starting</p>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-bone/70">Starting</p>
                   <p className="mt-1 font-serif text-2xl text-linen">$150</p>
                 </div>
               </div>
@@ -122,7 +121,7 @@ export default function KetaminePage() {
           </div>
 
           <p className="mt-8 text-xs text-ink/55">
-            All ketamine services require an initial consultation. Treatment plans are created individually based on medical evaluation.
+            All ketamine treatments require an initial consultation. Treatment plans are created individually based on medical evaluation.
           </p>
         </div>
       </section>
@@ -176,7 +175,7 @@ export default function KetaminePage() {
               href="/treatments"
               className="rounded-full border border-ink/20 px-7 py-4 text-xs uppercase tracking-[0.22em] text-ink transition-colors hover:border-pine hover:text-pine"
             >
-              View All Collections
+              View All Treatments
             </Link>
           </div>
         </div>

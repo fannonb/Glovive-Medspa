@@ -35,7 +35,7 @@ const policies = [
     number: "04",
     title: "Late Arrivals",
     body: [
-      "Please arrive 5–10 minutes before your appointment time. If you arrive more than 15 minutes late, your appointment may need to be shortened or rescheduled to respect the schedule of other guests.",
+      "Please arrive 5–10 minutes before your appointment time. If you arrive more than 15 minutes late, your appointment may need to be shortened or rescheduled to respect the schedule of other clients.",
     ],
   },
   {
@@ -82,7 +82,7 @@ export default function PoliciesPage() {
             <em className="italic text-cognac">Policies</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-sm md:text-base lg:text-lg leading-relaxed text-ink/70">
-            A few thoughtful guidelines that help us provide the best possible care to every guest.
+            A few thoughtful guidelines that help us provide the best possible care to every client.
           </p>
         </div>
       </section>

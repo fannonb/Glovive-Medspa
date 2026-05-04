@@ -78,7 +78,7 @@ export default function AboutPage() {
                 GloVive Wellness & MedSpa is a physician- and nurse-led practice where advanced medical expertise meets elevated, intentional self-care. We specialize in personalized wellness and aesthetic services designed to restore balance, enhance confidence, and optimize overall well-being.
               </p>
               <p>
-                Our offerings include IV nutrient hydration therapy, body balance weight management, ketamine-assisted infusion therapy, hormone optimization, and aesthetic refinements—each thoughtfully curated and delivered with precision, discretion, and a commitment to exceptional results.
+                Our offerings include IV nutrient hydration therapy, body balance weight management, ketamine-assisted infusion therapy, hormone optimization, and aesthetic treatments—each thoughtfully curated and delivered with precision, discretion, and a commitment to exceptional results.
               </p>
               <p>
                 At GloVive, care is not routine—it is refined, personalized, and designed to help you look, feel, and function at your highest level.

@@ -15,7 +15,7 @@ const allTreatments = [
     tag: "Most Requested",
     featured: true,
     image: "/images/service-iv-hydration.jpg",
-    href: "/treatments/glovive-elixir",
+    href: "/treatments/iv-hydration#glovive-elixir",
   },
   {
     name: "Vive Vitality",
@@ -26,10 +26,10 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/service-concierge.jpg",
-    href: "/treatments",
+    href: "/treatments/iv-hydration#vive-vitality",
   },
   {
-    name: "NAD+ Longevity",
+    name: "NAD+ Longevity Infusion",
     category: "IV Nutrient",
     tagline: "Premium cellular repair and long-term vitality infusion.",
     benefits: ["Cellular repair", "Anti-aging", "Energy"],
@@ -37,7 +37,7 @@ const allTreatments = [
     tag: "Premium",
     featured: false,
     image: "/images/service-ketamine.jpg",
-    href: "/treatments",
+    href: "/treatments/iv-hydration#nadplus-longevity-infusion",
   },
   {
     name: "Immune Reserve",
@@ -48,7 +48,7 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/interior-spa.jpg",
-    href: "/treatments",
+    href: "/treatments/iv-hydration#immune-reserve",
   },
   {
     name: "Tranquility Drip",
@@ -59,7 +59,7 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/service-body-balance.jpg",
-    href: "/treatments",
+    href: "/treatments/iv-hydration#tranquility-drip",
   },
   {
     name: "GloVive Glow Shot",
@@ -70,10 +70,10 @@ const allTreatments = [
     tag: "Signature",
     featured: true,
     image: "/images/service-vitamins.jpg",
-    href: "/treatments",
+    href: "/treatments/vitamins#glovive-glow-shot",
   },
   {
-    name: "B12 Vitality Boost",
+    name: "B12 Energy Boost",
     category: "Vitamin Injection",
     tagline: "Fast-acting injection to increase energy and support metabolism.",
     benefits: ["Energy", "Metabolism", "Focus"],
@@ -81,7 +81,7 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/service-card-vitamins.jpg",
-    href: "/treatments",
+    href: "/treatments/vitamins#b12-energy-boost",
   },
   {
     name: "Ketamine IV Infusion Therapy",
@@ -92,7 +92,7 @@ const allTreatments = [
     tag: "Guided",
     featured: false,
     image: "/images/service-card-ketamine.jpg",
-    href: "/treatments",
+    href: "/treatments/ketamine-iv-infusion",
   },
   {
     name: "GloVive Body Balance",
@@ -103,7 +103,7 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/service-card-balance.jpg",
-    href: "/treatments",
+    href: "/treatments/body-balance",
   },
   {
     name: "Detox Renewal",
@@ -114,7 +114,7 @@ const allTreatments = [
     tag: null,
     featured: false,
     image: "/images/about-founder.jpg",
-    href: "/treatments",
+    href: "/treatments/iv-hydration#detox-renewal",
   },
 ]
 
@@ -180,10 +180,10 @@ export function TreatmentsCarousel() {
                 sizes="320px"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
 
               <div className="absolute inset-x-0 bottom-0 px-5 pb-4">
-                <p className="text-[9px] uppercase tracking-[0.28em] text-bone/70">{t.category}</p>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-linen drop-shadow-sm">{t.category}</p>
               </div>
             </div>
 
@@ -195,7 +195,7 @@ export function TreatmentsCarousel() {
               {/* Benefit pills */}
               <div className="flex flex-wrap gap-1.5">
                 {t.benefits.map((b) => (
-                  <span key={b} className="rounded-full border border-border/60 px-2.5 py-0.5 text-[10px] text-ink/55">
+                  <span key={b} className="rounded-full bg-[#a4532e] px-2.5 py-0.5 text-[10px] text-white">
                     {b}
                   </span>
                 ))}

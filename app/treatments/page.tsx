@@ -1,235 +1,195 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Droplets, HeartPulse, Syringe, MapPin, Leaf } from "lucide-react"
+import { ArrowUpRight, Droplets, Sparkles, HeartPulse, Syringe, MapPin, Leaf, Zap } from "lucide-react"
 
 export const metadata = {
-  title: "Treatment Collections | GloVive Wellness & MedSpa",
+  title: "Treatments | GloVive Wellness & MedSpa",
   description:
-    "Explore our curated treatment collections — IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, Concierge IV Hydration, and GloVive Body Balance programs.",
+    "Explore GloVive's full menu of treatments — IV Nutrient Hydration, Ketamine IV Infusion Therapy, Vitamin Injections, GloVive Body Balance, and Concierge IV Hydration.",
 }
 
-const collections = [
+const treatments = [
   {
-    id: "iv-hydration",
-    number: "01",
-    title: "Signature Hydration",
-    subtitle: "IV Infusions",
-    description: "Customized IV infusions medically formulated to restore, replenish, and illuminate. From radiance boosters to recovery support.",
-    image: "/images/collection-iv.jpg",
     icon: Droplets,
-    treatmentCount: 8,
-    priceRange: "from $150",
+    title: "IV Nutrient Therapy",
+    description: "Customized infusions designed to hydrate, replenish, and elevate your overall wellness.",
     href: "/treatments/iv-hydration",
-    featured: true,
+    image: "/images/hero-main.png",
   },
   {
-    id: "ketamine",
-    number: "02",
-    title: "The Reset Experience",
-    subtitle: "Ketamine IV Infusion Therapy",
-    description: "Medically guided, immersive wellness designed to restore clarity, emotional balance, and inner calm in a controlled environment.",
-    image: "/images/collection-ketamine.jpg",
-    icon: HeartPulse,
-    treatmentCount: 4,
-    priceRange: "from $150",
-    href: "/treatments/ketamine",
-  },
-  {
-    id: "vitamins",
-    number: "03",
-    title: "Vitamin Boost",
-    subtitle: "Targeted Injections",
-    description: "Quick, targeted vitamin injections designed to support energy, beauty, immunity, and overall wellness.",
-    image: "/images/collection-vitamins.jpg",
-    icon: Syringe,
-    treatmentCount: 5,
-    priceRange: "from $40",
-    href: "/treatments/vitamins",
-  },
-  {
-    id: "concierge",
-    number: "04",
-    title: "Concierge Care",
-    subtitle: "In-Home IV Therapy",
-    description: "Experience wellness on your terms. Personalized IV therapy delivered directly to your home, office, or preferred location.",
-    image: "/images/collection-concierge.jpg",
     icon: MapPin,
-    treatmentCount: 1,
-    priceRange: "Treatment + travel fee",
+    title: "Concierge IV Hydration",
+    description: "Personalized IV therapy delivered directly to your home, office, or preferred location.",
     href: "/treatments/concierge",
+    image: "/images/service-card-iv-diverse.png",
   },
   {
-    id: "body-balance",
-    number: "05",
-    title: "GloVive Body Balance",
-    subtitle: "Weight Management",
-    description: "A personalized, medically guided approach designed to support sustainable weight loss and improved metabolism.",
-    image: "/images/collection-balance.jpg",
+    icon: HeartPulse,
+    title: "Ketamine IV Infusion Therapy",
+    description: "A guided, medical approach supporting mental clarity and emotional balance.",
+    href: "/treatments/ketamine-iv-infusion",
+    image: "/images/service-card-ketamine-diverse.png",
+  },
+  {
+    icon: Sparkles,
+    title: "Aesthetic Treatment",
+    description: "A refined selection of aesthetic services designed to enhance your natural glow.",
+    href: "/treatments/aesthetic-treatments",
+    image: "/images/service-card-aesthetics-diverse.png",
+    comingSoon: true,
+  },
+  {
+    icon: Syringe,
+    title: "Vitamin Boost Injections",
+    description: "Quick, targeted boosts to support energy, immunity, and overall vitality.",
+    href: "/treatments/vitamins",
+    image: "/images/service-card-vitamins.png",
+  },
+  {
     icon: Leaf,
-    treatmentCount: 2,
-    priceRange: "from $100",
+    title: "GloVive Body Balance",
+    description: "Personalized solutions for sustainable weight loss and long-term wellness.",
     href: "/treatments/body-balance",
+    image: "/images/service-card-balance.png",
+  },
+  {
+    icon: Zap,
+    title: "GloVive Vitality Therapy",
+    description: "Restore your natural balance with medically guided hormone optimization. Personalized TRT and HRT programs designed to enhance vitality, focus, and overall well-being.",
+    href: "/treatments/vitality-therapy",
+    image: "/images/service-card-vitality-diverse.png",
   },
 ]
 
 export default function TreatmentsPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-linen">
-        <div className="mx-auto max-w-7xl px-6 pb-14 pt-20 lg:px-10 lg:pb-20 lg:pt-28">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.38em] text-cognac">
-              <span className="h-px w-8 bg-cognac" />
-              Our Collections
-              <span className="h-px w-8 bg-cognac" />
-            </span>
-            <h1 className="mt-6 font-serif text-[48px] leading-[1.02] tracking-tight text-ink md:text-[72px] lg:text-[88px]">
-              Treatment <em className="italic text-cognac">Collections</em>
-            </h1>
-            <p className="mx-auto mt-6 max-w-xl text-sm md:text-base lg:text-lg leading-relaxed text-ink/70">
-              Our curated collections. Each designed with intention, backed by medicine, and delivered with care.
-            </p>
-          </div>
+      {/* HEADER */}
+      <section className="bg-linen">
+        <div className="mx-auto max-w-5xl px-6 pt-16 pb-12 text-center lg:px-10 lg:pt-24 lg:pb-16">
+          <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">What We Offer</span>
+          <h1 className="mt-5 font-serif text-[44px] leading-[1.02] tracking-tight text-ink md:text-[72px] lg:text-[88px]">
+            Our <em className="italic text-cognac">Treatments</em>
+          </h1>
+          <p className="mx-auto mt-5 max-w-xl text-sm md:text-base leading-relaxed text-ink/70">
+            A curated menu of medically guided treatments to help you feel, look, and live better.
+          </p>
         </div>
       </section>
 
-      {/* COLLECTIONS GRID */}
+      {/* TREATMENTS GRID */}
       <section className="bg-bone/40">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
-          {/* Featured Collection - Full Width */}
-          {(() => {
-            const featured = collections[0]
-            const FeaturedIcon = featured.icon
-            return (
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {treatments.map((s) => (
               <Link
-                href={featured.href}
-                className="group relative mb-6 flex flex-col overflow-hidden rounded-2xl bg-background shadow-sm ring-1 ring-border/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_48px_-16px_rgba(67,40,20,0.22)] hover:ring-cognac/40 lg:flex-row"
+                key={s.title}
+                href={s.href}
+                className="group flex flex-col overflow-hidden rounded-2xl bg-background shadow-sm ring-1 ring-border/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_48px_-16px_rgba(67,40,20,0.22)] hover:ring-cognac/40"
               >
                 {/* Image */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden lg:aspect-auto lg:w-1/2">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={featured.image}
-                    alt={featured.title}
+                    src={s.image}
+                    alt={s.title}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {/* Collection number overlay */}
-                  <div className="absolute left-5 top-5 flex h-12 w-12 items-center justify-center rounded-full bg-linen/95 font-serif text-lg text-cognac shadow-md">
-                    {featured.number}
-                  </div>
+                  {s.comingSoon && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-ink/40">
+                      <span className="rounded-full bg-linen/95 px-4 py-2 text-[10px] uppercase tracking-[0.22em] text-ink">
+                        Coming Soon
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-1 flex-col justify-center p-8 lg:p-12">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cognac/10">
-                      <FeaturedIcon className="h-5 w-5 text-cognac" strokeWidth={1.75} />
+                <div className="flex flex-1 flex-col px-6 py-5">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cognac/10 transition-colors duration-300 group-hover:bg-cognac/20">
+                      <s.icon className="h-4 w-4 text-cognac" strokeWidth={1.75} />
                     </div>
-                    <span className="text-[11px] uppercase tracking-[0.22em] text-cognac">{featured.subtitle}</span>
+                    <h2 className="font-serif text-[22px] leading-snug text-ink">{s.title}</h2>
                   </div>
-                  <h2 className="mt-4 font-serif text-[36px] leading-[1.1] text-ink md:text-[44px]">{featured.title}</h2>
-                  <p className="mt-4 max-w-md text-base leading-relaxed text-ink/65">{featured.description}</p>
-                  
-                  <div className="mt-6 flex flex-wrap items-center gap-6 border-t border-border/40 pt-6">
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Treatments</p>
-                      <p className="mt-1 font-serif text-xl text-ink">{featured.treatmentCount}</p>
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Starting</p>
-                      <p className="mt-1 font-serif text-xl text-cognac">{featured.priceRange}</p>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-cognac transition-colors group-hover:text-cognac-dark">
-                    Explore Collection
-                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  <div className="my-4 h-px w-full bg-border/50 transition-colors duration-300 group-hover:bg-cognac/30" />
+                  <p className="text-sm md:text-base leading-relaxed text-ink/65">{s.description}</p>
+                  <div className="mt-5 flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-cognac">
+                    Learn more
+                    <span className="h-px w-5 bg-cognac transition-all duration-500 group-hover:w-9" />
                   </div>
                 </div>
               </Link>
-            )
-          })()}
-
-          {/* Rest of Collections - 2x2 Grid */}
-          <div className="grid gap-5 sm:grid-cols-2">
-            {collections.slice(1).map((c) => {
-              const IconComponent = c.icon
-              return (
-                <Link
-                  key={c.id}
-                  href={c.href}
-                  className="group flex flex-col overflow-hidden rounded-2xl bg-background shadow-sm ring-1 ring-border/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_48px_-16px_rgba(67,40,20,0.22)] hover:ring-cognac/40"
-                >
-                  {/* Image */}
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={c.image}
-                      alt={c.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    {/* Collection number */}
-                    <div className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-linen/95 font-serif text-sm text-cognac shadow-md">
-                      {c.number}
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex flex-1 flex-col p-6">
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cognac/10 transition-colors duration-300 group-hover:bg-cognac/20">
-                        <IconComponent className="h-4 w-4 text-cognac" strokeWidth={1.75} />
-                      </div>
-                      <span className="text-[10px] uppercase tracking-[0.22em] text-cognac">{c.subtitle}</span>
-                    </div>
-                    <h3 className="mt-3 font-serif text-[24px] leading-snug text-ink">{c.title}</h3>
-                    <div className="my-4 h-px w-full bg-border/50 transition-colors duration-300 group-hover:bg-cognac/30" />
-                    <p className="text-sm md:text-base leading-relaxed text-ink/65">{c.description}</p>
-                    
-                    <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border/40 pt-5">
-                      <div>
-                        <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Treatments</p>
-                        <p className="mt-1 font-serif text-lg text-ink">{c.treatmentCount}</p>
-                      </div>
-                      <div>
-                        <p className="text-[10px] uppercase tracking-[0.2em] text-ink/50">Starting</p>
-                        <p className="mt-1 font-serif text-lg text-cognac">{c.priceRange}</p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              )
-            })}
+            ))}
           </div>
         </div>
       </section>
 
-      {/* BOTTOM CTA */}
+      {/* WHY GLOVIVE */}
       <section className="bg-linen">
-        <div className="mx-auto max-w-4xl px-6 py-14 text-center lg:px-10 lg:py-20">
-          <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Not Sure Where to Start?</span>
-          <h2 className="mt-5 font-serif text-[36px] leading-[1.05] tracking-tight text-ink md:text-[48px]">
-            Let&apos;s build your <em className="italic text-cognac">protocol.</em>
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-[11px] uppercase tracking-[0.32em] text-cognac">Why GloVive</span>
+            <h2 className="mt-4 font-serif text-[36px] leading-[1.1] tracking-tight text-ink md:text-[48px]">
+              The difference is in the <em className="italic text-cognac">details.</em>
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="rounded-xl border border-border/40 bg-background p-8 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cognac/10">
+                <span className="font-serif text-2xl text-cognac">01</span>
+              </div>
+              <h3 className="mt-5 font-serif text-xl text-ink">Medically Guided</h3>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-ink/65">
+                Every therapy is overseen by experienced licensed healthcare professionals with your safety at the center.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border/40 bg-background p-8 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cognac/10">
+                <span className="font-serif text-2xl text-cognac">02</span>
+              </div>
+              <h3 className="mt-5 font-serif text-xl text-ink">Personalized Care</h3>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-ink/65">
+                We tailor every visit to your unique goals, health history, and wellness aspirations.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border/40 bg-background p-8 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cognac/10">
+                <span className="font-serif text-2xl text-cognac">03</span>
+              </div>
+              <h3 className="mt-5 font-serif text-xl text-ink">Elevated Experience</h3>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-ink/65">
+                From arrival to aftercare, every detail is designed to feel more spa than clinic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-bone/40">
+        <div className="mx-auto max-w-4xl px-6 py-16 text-center lg:px-10 lg:py-24">
+          <h2 className="font-serif text-[32px] leading-[1.05] tracking-tight text-ink md:text-[48px]">
+            Not sure where to <em className="italic text-cognac">begin?</em>
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-ink/70">
-            Every treatment starts with a conversation. Book a consultation and we&apos;ll design something just for you.
+            Book a consultation and we&apos;ll craft a personalized plan around your goals, lifestyle, and wellness vision.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/booking"
               className="group inline-flex items-center gap-2 rounded-full bg-cognac px-7 py-4 text-xs uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-cognac-dark"
             >
-              Book Consultation
+              Book a Consultation
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             <Link
-              href="tel:4109484640"
+              href="/treatments"
               className="rounded-full border border-ink/20 px-7 py-4 text-xs uppercase tracking-[0.22em] text-ink transition-colors hover:border-cognac hover:text-cognac"
             >
-              Call 410.948.4640
+              See All Treatments
             </Link>
           </div>
         </div>
