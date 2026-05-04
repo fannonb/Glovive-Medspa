@@ -44,8 +44,23 @@ export function DiscountPopup() {
     
     if (!hasSeenPopup) {
       const checkScroll = () => {
+        if (pathname === '/' || pathname === '') {
+          // On homepage, trigger when treatments section is in view
+          const servicesSection = document.getElementById('services')
+          if (servicesSection) {
+            const rect = servicesSection.getBoundingClientRect()
+            // Trigger when the section enters the bottom 3/4 of the screen
+            if (rect.top <= window.innerHeight * 0.75) {
+              setIsOpen(true)
+              window.removeEventListener("scroll", checkScroll)
+              window.removeEventListener("resize", checkScroll)
+            }
+            return
+          }
+        }
+        
+        // Fallback or for other pages: halfway down
         const scrollableDistance = document.documentElement.scrollHeight - window.innerHeight
-        // If the page is not significantly scrollable, show it immediately, otherwise show at halfway mark
         if (scrollableDistance <= 0 || window.scrollY >= scrollableDistance / 2) {
           setIsOpen(true)
           window.removeEventListener("scroll", checkScroll)
