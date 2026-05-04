@@ -18,7 +18,7 @@ import {
 
 /** Quick Facts for Hero Bar */
 const quickFacts = [
-  { icon: Info, label: "Consultation Required?", value: "No" },
+  { icon: Info, label: "Consultation Required?", value: "Health Intake" },
   { icon: RefreshCw, label: "Sessions Needed", value: "As needed" },
   { icon: Clock, label: "Treatment Length", value: "30–60 min" },
   { icon: CalendarCheck, label: "Results Duration", value: "Immediate" },
@@ -433,7 +433,7 @@ export default function IVHydrationPage() {
                     </li>
                   ))}
                 </ul>
-                {t.slug && (
+                {t.slug && t.slug !== 'glovive-elixir' && (
                   <div className="mt-4 pt-4 border-t border-border/40 flex justify-end">
                     <Link href={`/treatments/${t.slug}`} className="inline-flex items-center gap-1 text-[11px] uppercase tracking-[0.2em] text-cognac hover:text-cognac-dark transition-colors">
                       View Details <ChevronRight className="w-3.5 h-3.5" />

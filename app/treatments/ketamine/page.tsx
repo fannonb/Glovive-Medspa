@@ -23,7 +23,7 @@ const offerings = [
   {
     name: "Wellness Reset Package",
     description: "A structured treatment plan of six sessions designed for optimal results and lasting change.",
-    price: "$2,200 – $2,400",
+    price: "$2,700 – $3,000",
     per: "6 sessions",
   },
   {

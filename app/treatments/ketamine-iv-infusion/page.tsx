@@ -14,7 +14,7 @@ import {
 } from "lucide-react"
 
 const quickFacts = [
-  { icon: ShieldCheck, label: "Consultation Required?", value: "Yes" },
+  { icon: ShieldCheck, label: "Consultation Required?", value: "Health Intake" },
   { icon: Stethoscope, label: "Administered by", value: "Licensed Providers" },
   { icon: HeartPulse, label: "Setting", value: "Safe & Monitored" },
   { icon: Clock, label: "Sessions Needed", value: "6 Initial Recommended" },
@@ -82,7 +82,7 @@ const offerings = [
   {
     name: "Wellness Reset Package",
     description: "A structured treatment plan of six sessions designed for optimal results and lasting change.",
-    price: "$2,200 – $2,400",
+    price: "$2,700 – $3,000",
     per: "6 sessions",
   },
   {
@@ -213,14 +213,24 @@ export default function KetamineInfusionPage() {
               <p className="text-[15px] text-ink/70 leading-relaxed mb-6">
                 Schedule your private consultation today and discover whether ketamine IV infusion therapy may be the next step toward restoring balance, relief, and long-term wellness.
               </p>
-              <a 
-                href="https://research.ebsco.com/linkprocessor/plink?id=bad519b2-ecab-3a88-a854-6a916356a74a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.1em] text-cognac hover:text-cognac-dark font-medium transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" /> View Clinical Research
-              </a>
+              <div className="flex flex-col gap-3">
+                <a 
+                  href="https://medicine.yale.edu/news-article/ketamine-how-yale-redefined-depression-treatment/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.1em] text-cognac hover:text-cognac-dark font-medium transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" /> Yale Medicine Research
+                </a>
+                <a 
+                  href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6767816/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.1em] text-cognac hover:text-cognac-dark font-medium transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" /> NIH Clinical Study
+                </a>
+              </div>
             </div>
             
             <div className="relative z-10 w-full md:w-1/3 flex justify-center md:justify-end">

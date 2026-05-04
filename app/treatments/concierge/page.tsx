@@ -50,7 +50,7 @@ const notes = [
 ]
 
 const quickFacts = [
-  { icon: ShieldCheck, label: "Consultation Required?", value: "Yes" },
+  { icon: ShieldCheck, label: "Consultation Required?", value: "Health Intake" },
   { icon: Stethoscope, label: "Administered by", value: "Licensed Providers" },
   { icon: MapPin, label: "Location", value: "Your Choice" },
   { icon: Users, label: "Groups & Events", value: "Available" },
